@@ -1,1 +1,1 @@
-# Ghost Tours - Web Project
+# Amy's Bakery - Web Project
