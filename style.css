@@ -9,22 +9,22 @@ header {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  height: 105px;
+  height: 16vh;
   background: #8FE1D4;
 }
 
 header h1 {
   position: absolute;
-  top: 25px;
-  left: 31%;
-  width: 120px;
+  top: 33px;
+  left: 33%;
+  width: 90px;
   margin: 0;
-  padding: 30px 10px;
+  padding: 22px 10px;
   border: 5px solid #fff;
   border-radius: 100px;
   background: #ffa7d2;
   font-weight: 400;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   text-align: center;
   color: #fff;
 }
@@ -40,28 +40,59 @@ header p {
 
 /* Main */
 
+main {
+  height: 86.5vh;
+  margin-top: 1vh;
+  background: beige;
+}
 
-/*
+main ul {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 2.8rem;
+  padding-left: 0;
+}
 
-header {
-  align-items: flex-end;
-  height: 120px;
+main ul li {
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+main p {
+  width: 80%;
+  margin: 1.2rem auto;
 }
 
 
-header h1 {
-  top: 15px;
-  left: 25%;
-  width: 150px;
-  padding: 40px 20px;
-  border: 6px solid #fff; 
-} 
 
-header p {
-  margin-right: 20px;
-  margin-bottom: 8px;
-  letter-spacing: 0.1rem;
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 1200px) {
+  
+  header {
+    align-items: flex-end;
+    height: 120px;
+  }
+
+
+  header h1 {
+    top: 20px;
+    left: 44%;
+    width: 120px;
+    padding: 40px 20px;
+    border: 6px solid #fff; 
+  } 
+
+  header p {
+    margin-right: 20px;
+    margin-bottom: 8px;
+    width: 180px;
+    letter-spacing: 0.1rem;
+  }
+
 }
-
-
-*/
