@@ -52,8 +52,9 @@ main {
 main ul {
   display: flex;
   justify-content: space-around;
+  min-width: 250px;
   width: 250px;
-  margin: 0 auto;
+  margin: 0.8rem auto;
   padding-top: 2.8rem;
   padding-left: 0;
 }
@@ -75,24 +76,32 @@ main section {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  width: 80%;
   margin-top: 2rem;
 }
 
-main section > * {
-  margin: 2% 0;
-}
-
 main section p {
-  width: 80%;
   text-align: center;
   color: #333;
   line-height: 1.5rem;
 }
 
+main section p:first-child {
+  margin-top: -.2rem;
+}
+
 main section div#contact {
   display: flex;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 3rem;
+}
+
+main section div#contact p {
+  width: 80%;
+  padding: 10px 0;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
 }
 
 main section div#contact span {
@@ -102,7 +111,7 @@ main section div#contact span {
 
 main section p#location {
   width: 80%;
-  margin-top: 0.8rem;
+  margin-top: 3rem;
   font-size: 0.8rem;
   font-style: italic;
   line-height: 1rem;
@@ -112,7 +121,103 @@ main section p#location {
 
 
 
-/* Media Queries 
+/* Media Queries */ 
+
+@media screen and (min-width: 425px) {
+  header {
+    height: 135px;
+  }
+
+  header h1 {
+    top: 37px;
+    left: 50%;
+    width: 120px;
+    margin: 0 0 0 -79px;
+    padding: 30px 20px;
+    font-size: 2.5rem;
+  }
+
+  header p {
+    width: 200px;
+  }
+
+  main ul {
+    width: 350px;
+    margin-top: 1.6rem;
+  }
+
+  main ul li {
+    font-size: 1rem;
+  }
+
+  main img {
+    width: 60%;
+  }
+
+  main p {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  header {
+    height: 160px;
+  }
+
+  header h1 {
+    top: 45px;
+    left: 50%;
+    width: 140px;
+    margin: 0 0 0 -88px;
+    padding: 40px 20px;
+    font-size: 2.5rem;
+  }
+
+  header p {
+    width: 220px;
+    font-size: 1.2rem;
+  }
+
+  main ul {
+    width: 600px;
+  }
+
+  main ul li {
+    font-size: 1.2rem;
+  }
+
+  main img {
+    width: 50%;
+  }
+
+  main p {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+  main ul {
+    margin-top: 2.5rem;
+  }
+  
+  main ul li {
+    font-size: 1.4rem;
+  }
+  
+  main img {
+    width: 40%;
+    margin-top: 2rem;
+  }
+
+  main p {
+    width: 60%;
+  }
+}
+
+/*
 
 @media screen and (min-width: 1200px) {
   
